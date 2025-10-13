@@ -2,13 +2,13 @@ import java.util.Scanner;
 public class Prog_2 {
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the radius of the cylinder: ");
-        double rad = input.nextDouble();
+        double rad = sc.nextDouble();
 
         System.out.print("Enter the length of the cylinder: ");
-        double length = input.nextDouble();
+        double length = sc.nextDouble();
 
         double area = Math.PI * rad * rad;
         double vol = area * length;
