@@ -15,13 +15,13 @@ public class Prog_6 {
         double x3 = sc.nextDouble();
         double y3 = sc.nextDouble();
 
-        double a = Math.pow(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2), 0.5);
-        double b = Math.pow(Math.pow(x3 - x2, 2) + Math.pow(y3 - y2, 2), 0.5);
-        double c = Math.pow(Math.pow(x1 - x3, 2) + Math.pow(y1 - y3, 2), 0.5);
+        double a = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+        double b = Math.sqrt(Math.pow(x3 - x2, 2) + Math.pow(y3 - y2, 2));
+        double c = Math.sqrt(Math.pow(x1 - x3, 2) + Math.pow(y1 - y3, 2));
 
         double s = (a + b + c) / 2;
 
-        double area = Math.pow(s * (s - a) * (s - b) * (s - c), 0.5);
+        double area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
 
         System.out.println("The area of the triangle is " + area);
 
